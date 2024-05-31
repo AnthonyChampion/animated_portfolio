@@ -8,6 +8,7 @@ import { useState } from "react";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 import { IoCopyOutline } from "react-icons/io5";
+import { WavyBackgroundDemo } from "./WavyBackground";
 
 export const BentoGrid = ({
     className,
@@ -32,8 +33,6 @@ export const BentoGridItem = ({
     className,
     title,
     description,
-    header,
-    icon,
     id,
     img,
     imgClassName,
@@ -62,7 +61,7 @@ export const BentoGridItem = ({
     return (
         <div
             className={cn(
-                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.1]",
+                "row-span-1 relative overflow-hidden rounded-3xl group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4 border border-white/[0.4]",
                 className
             )}
             style={{
@@ -71,7 +70,7 @@ export const BentoGridItem = ({
             }}
         >
             <div className={`${id === 6 && "flex justify-center"} h-full`}>
-                <div className="w-full h-full absolute">
+                <div className="w-full h-full absolute opacity-50 lg:opacity-50">
                     {img && (
                         <img src={img}
                             alt={img}
@@ -79,7 +78,7 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
-                <div className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"}`}>
+                <div className={`absolute right-0 -bottom-2 ${id === 5 && "w-full opacity-80"}`}>
                     {spareImg && (
                         <img
                             src={spareImg}
@@ -89,7 +88,6 @@ export const BentoGridItem = ({
                 </div>
                 {id === 6 && (
                     <BackgroundGradientAnimation>
-                        {/* <div className="absolute z-50 flex items-center justify-center text-white font-bold" /> */}
                     </BackgroundGradientAnimation>
                 )}
                 <div className={cn(
@@ -102,6 +100,7 @@ export const BentoGridItem = ({
                         {title}
                     </div>
 
+                    {id === 1 && < WavyBackgroundDemo />}
 
                     {id === 2 && <GlobeDemo />}
 

@@ -1,24 +1,24 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Testimonials", link: "#testimonials" },
+    { name: "Approach", link: "#approach" },
     { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
     {
         id: 1,
-        title: "I love design and make beautiful and optimised sites ",
+        title: "",
         description: "",
-        className: "lg:col-span-2 md:col-span-2 md:row-span-2 lg:min-h-[60vh]",
+        className: "lg:col-span-2 md:col-span-2 md:row-span-2 lg:h-[70vh] h-[20rem] row-span-1",
         imgClassName: "w-full h-full",
         titleClassName: "justify-end",
-        img: "/b1.svg",
+        img: "",
         spareImg: "",
     },
     {
         id: 2,
-        title: "I'm curious of new's tech around the world",
+        title: "I'm curious of dev news around the world",
         description: "",
         className: "lg:col-span-1 md:col-span-3 md:row-span-1",
         imgClassName: "",
@@ -49,12 +49,12 @@ export const gridItems = [
 
     {
         id: 5,
-        title: "Currently building a React & React Native movie app  ",
-        description: "",
+        title: "Currently learning new stacks during my training",
+        description: "Infinite loop",
         className: "md:col-span-2 md:row-span-2",
-        imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
+        imgClassName: "absolute md:-right-12 rounded-3xl right-4 top-4 md:top-40 md:w-[600px] w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
-        img: "/b5.svg",
+        img: "/devimg.png",
         spareImg: "/grid.svg",
     },
     {
@@ -72,101 +72,35 @@ export const gridItems = [
 export const projects = [
     {
         id: 1,
-        title: "Squizz Game",
-        des: "Team project: Fun quiz for students",
-        img: "/sqg.png",
-        iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/figma.svg", "/git.svg", "/gitbash.svg"],
-        link: "https://wildcodeschool-2024-02.github.io/JS-RemoteFR-P1-CodeSquad/",
+        title: "Cineside",
+        des: "Personal project: A React Native movie app with Expo and Tailwind",
+        img: "/cines.png",
+        iconLists: ["/re.svg", "/tail.svg", "/expo.svg", "/astudio.svg", "/git.svg", "/gitbash.svg", "/figma.svg"],
+        link: "",
     },
     {
         id: 2,
-        title: "Movinder",
-        des: "Team project: Movie App with Tmdb API",
-        img: "/mv.png",
-        iconLists: ["/html.svg", "/css.svg", "/re.svg", "/figma.svg", "/git.svg", "/gitbash.svg"],
-        link: "https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-LOMASHOW",
-    },
-    {
-        id: 3,
         title: "En Terre Froide",
-        des: "Team project: 36h to build a Web site about nature ",
+        des: "School project: 36h to build a Web site about nature ",
         img: "/etf.png",
         iconLists: ["/re.svg", "/css.svg", "/git.svg", "/gitbash.svg", "/figma.svg"],
         link: "https://enterrefroide.netlify.app/",
     },
     {
-        id: 4,
-        title: "Animated Apple Iphone 3D Website",
-        des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-        img: "/p4.svg",
-        iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-        link: "/ui.apple.com",
-    },
-];
-
-export const testimonials = [
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-    {
-        quote:
-            "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-        name: "Michael Johnson",
-        title: "Director of AlphaStream Technologies",
-    },
-];
-
-export const companies = [
-    {
-        id: 1,
-        name: "cloudinary",
-        img: "/cloud.svg",
-        nameImg: "/cloudName.svg",
-    },
-    {
-        id: 2,
-        name: "appwrite",
-        img: "/app.svg",
-        nameImg: "/appName.svg",
-    },
-    {
         id: 3,
-        name: "HOSTINGER",
-        img: "/host.svg",
-        nameImg: "/hostName.svg",
+        title: "Movinder",
+        des: "School project: Movie App with Tmdb API",
+        img: "/mv.png",
+        iconLists: ["/re.svg", "/css.svg", "/git.svg", "/gitbash.svg", "/figma.svg",],
+        link: "https://github.com/WildCodeSchool-2024-02/JS-RemoteFR-Gridception-P2-LOMASHOW",
     },
     {
         id: 4,
-        name: "stream",
-        img: "/s.svg",
-        nameImg: "/streamName.svg",
-    },
-    {
-        id: 5,
-        name: "docker.",
-        img: "/dock.svg",
-        nameImg: "/dockerName.svg",
+        title: "Squizz Game",
+        des: "School project: Fun quiz for students",
+        img: "/sqg.png",
+        iconLists: ["/html.svg", "/css.svg", "/javascript.svg", "/git.svg", "/gitbash.svg", "/figma.svg",],
+        link: "https://wildcodeschool-2024-02.github.io/JS-RemoteFR-P1-CodeSquad/",
     },
 ];
 
@@ -182,14 +116,14 @@ export const workExperience = [
         id: 2,
         title: "Mobile App Dev - JSM Tech",
         desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-        className: "md:col-span-2", // change to md:col-span-2
+        className: "md:col-span-2",
         thumbnail: "/exp2.svg",
     },
     {
         id: 3,
         title: "Freelance App Dev Project",
         desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-        className: "md:col-span-2", // change to md:col-span-2
+        className: "md:col-span-2",
         thumbnail: "/exp3.svg",
     },
     {

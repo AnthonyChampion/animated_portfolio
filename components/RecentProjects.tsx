@@ -5,21 +5,21 @@ import { FaLocationArrow } from 'react-icons/fa6'
 
 const RecentProjects = () => {
     return (
-        <div className="py-20">
+        <div className="py-32" id="projects">
             <h1 className="heading">
-                A small selection of {" "}
-                <span className="text-purple">recent projects</span>
+                My recent {" "}
+                <span className="text-purple">school projects</span>
             </h1>
-            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+            <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 lg:mt-10 mt-2">
                 {projects.map(({ id, title, des, img, iconLists, link }) => (
-                    <div key={id} className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
+                    <div key={id} className="sm:h-[41rem] h-[20rem] lg:min-h-[32.5rem] flex items-center justify-center sm:w-[570px] w-[80vw]">
                         <PinContainer title={title} href={link}>
                             <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10">
-                                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl bg-[#13162d]">
+                                <div className="relative w-full h-full overflow-hidden rounded-3xl bg-[#13162d]">
                                     <img src="/bg.png" alt="bg-img" />
                                 </div>
                                 <img src={img} alt={title}
-                                    className="z-10 absolute bottom-0 w-[30rem] h-[22rem] rotate-6 -bottom-10" />
+                                    className="z-10 absolute w-[16rem] h-[11rem] lg:w-[30rem] lg:h-[22rem] rotate-3 -bottom-12 lg:-bottom-8 " />
                             </div>
                             <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                                 {title}
