@@ -21,9 +21,9 @@ const Hero = () => {
                     <h2 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">Dynamic Web Portfolio with Next.js</h2>
                     <TextGenerateEffect
                         className="text-center text-[40px] md:text-5xl lg:text-6xl"
-                        words="Transforming ideas in real projects" />
+                        words="Hi, I&apos;m Anthony, a full stack developer" />
                     <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-                        Hi, I&apos;m Anthony, a full stack developer
+                        Transforming ideas in real projects
                     </p>
                     <a href='#about'>
                         <MagicButton

@@ -1,7 +1,7 @@
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
-    { name: "Approach", link: "#approach" },
+    { name: "Goals", link: "#goals" },
     { name: "Contact", link: "#contact" },
 ];
 
@@ -38,7 +38,7 @@ export const gridItems = [
     },
     {
         id: 4,
-        title: "Tech enthusiast with a passion for development.",
+        title: "Tech enthusiast with a passion for development",
         description: "",
         className: "lg:col-span-1 md:col-span-1 md:row-span-1",
         imgClassName: "",
@@ -50,7 +50,7 @@ export const gridItems = [
     {
         id: 5,
         title: "Currently learning new stacks during my training",
-        description: "Infinite loop",
+        description: "",
         className: "md:col-span-2 md:row-span-2",
         imgClassName: "absolute md:-right-12 rounded-3xl right-4 top-4 md:top-40 md:w-[600px] w-60",
         titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -73,7 +73,7 @@ export const projects = [
     {
         id: 1,
         title: "Cineside",
-        des: "Personal project: A React Native movie app with Expo and Tailwind",
+        des: "Personal project on work: A React Native movie app with Expo and Tailwind",
         img: "/cines.png",
         iconLists: ["/re.svg", "/tail.svg", "/expo.svg", "/astudio.svg", "/git.svg", "/gitbash.svg", "/figma.svg"],
         link: "",
@@ -139,13 +139,11 @@ export const socialMedia = [
     {
         id: 1,
         img: "/git.svg",
+        link: "https://github.com/AnthonyChampion",
     },
     {
         id: 2,
-        img: "/twit.svg",
-    },
-    {
-        id: 3,
         img: "/link.svg",
+        link: "https://www.linkedin.com/in/anthony-rodrigues-champion-368406188",
     },
 ];

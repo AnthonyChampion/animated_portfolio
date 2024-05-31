@@ -6,24 +6,24 @@ import { CanvasRevealEffect } from "@/components/ui/CanvasRevealEffect";
 
 const Approach = () => {
     return (
-        <section className="w-full py-2" id="approach">
+        <section className="w-full py-2" id="goals">
             <h1 className="heading">
-                My <span className="text-purple">approach</span>
+                My <span className="text-purple">goals</span> as a developer
             </h1>
             <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
                 <Card
-                    title="Project & Strategy"
-                    icon={<AceternityIcon order="Phase 1" />}
-                    description="We'll collaborate to map out your website's goals, target audience, and key functionnalities.">
+                    title="Practical Experience"
+                    icon={<AceternityIcon order="Goal 1" />}
+                    description="Gaining proficiency and experience in relevant skills through projects and jobs.">
                     <CanvasRevealEffect
                         animationSpeed={5.1}
                         containerClassName="bg-emerald-900"
                     />
                 </Card>
                 <Card
-                    title="Development & Progress Update"
-                    icon={<AceternityIcon order="Phase 2" />}
-                    description="Once we agree on the plan, I cue my lofi playlist and dive into coding.">
+                    title="Continuous Learning"
+                    icon={<AceternityIcon order="Goal 2" />}
+                    description="Staying updated with advancements in their field and adapting to changes in technology trends.">
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-purple-500"
@@ -34,9 +34,9 @@ const Approach = () => {
                     />
                 </Card>
                 <Card
-                    title="Development & Launch"
-                    icon={<AceternityIcon order="Phase 3" />}
-                    description="This is were magic happens ! Bases on approved design, I'll translate into functional code.">
+                    title="Career Preparation"
+                    icon={<AceternityIcon order="Goal 3" />}
+                    description="Building a professional network through interactions with peers, professors, and industry professionals.">
                     <CanvasRevealEffect
                         animationSpeed={3}
                         containerClassName="bg-sky-600"
