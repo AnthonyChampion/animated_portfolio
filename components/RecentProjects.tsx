@@ -2,12 +2,13 @@ import { projects } from '@/data'
 import React from 'react'
 import { PinContainer } from './ui/3d-pin'
 import { FaLocationArrow } from 'react-icons/fa6'
+import Image from 'next/image'
 
 const RecentProjects = () => {
     return (
         <div className="py-32" id="projects">
             <h1 className="heading">
-                My recent {" "}
+                My {" "}
                 <span className="text-purple">recent projects</span>
             </h1>
             <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 lg:mt-10 mt-2">
@@ -16,10 +17,11 @@ const RecentProjects = () => {
                         <PinContainer title={title} href={link}>
                             <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[20vh] mb-10">
                                 <div className="relative w-full h-full overflow-hidden rounded-3xl bg-[#13162d]">
-                                    <img src="/bg.png" alt="bg-img" />
+                                    <Image src="/bg.png" alt="bg-img" width={100} height={100} />
                                 </div>
-                                <img src={img} alt={title}
-                                    className="z-10 absolute w-[16rem] h-[11rem] lg:w-[30rem] lg:h-[22rem] rotate-3 -bottom-12 lg:-bottom-8 " />
+                                <Image src={img} alt={title}
+                                    className="z-10 absolute w-[16rem] h-[11rem] lg:w-[30rem] lg:h-[22rem] rotate-3 -bottom-12 lg:-bottom-8 "
+                                    width={200} height={200} />
                             </div>
                             <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
                                 {title}
@@ -35,8 +37,8 @@ const RecentProjects = () => {
                                             style={{
                                                 transform: `translateX(-${5 * index * 2}px)`
                                             }}>
-                                            <img src={icon} alt={icon}
-                                                className="p-2" />
+                                            <Image src={icon} alt={icon}
+                                                className="p-2" width={50} height={50} />
                                         </div>
                                     ))}
                                 </div>
