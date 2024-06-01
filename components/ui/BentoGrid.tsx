@@ -79,7 +79,7 @@ export const BentoGridItem = ({
                         />
                     )}
                 </div>
-                <div className={`absolute right-0 -bottom-2 ${id === 5 && "w-full opacity-80"}`}>
+                <div className={`absolute right-0 -bottom-2 ${id === 4 && "w-full opacity-80"}`}>
                     {spareImg && (
                         <Image
                             src={spareImg}
@@ -89,7 +89,7 @@ export const BentoGridItem = ({
                             height={200} />
                     )}
                 </div>
-                {id === 6 && (
+                {id === 5 && (
                     <BackgroundGradientAnimation>
                     </BackgroundGradientAnimation>
                 )}
@@ -99,7 +99,7 @@ export const BentoGridItem = ({
                     <div className="font-sans font-extralight text-[#c1c2d3] text-sm md:text-xs lg:text-base z-10">
                         {description}
                     </div>
-                    <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+                    <div className="font-sans font-bold text-lg lg:text-3xl md:text-2xl max-w-96 z-10">
                         {title}
                     </div>
 
@@ -108,22 +108,22 @@ export const BentoGridItem = ({
                     {id === 2 && <GlobeDemo />}
 
                     {id === 3 && (
-                        <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+                        <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2 md:-top-2 md:-right-2">
+                            <div className="flex flex-col gap-3 md:gap-4 lg:gap-8">
                                 {["React.js", "Javascript", "TailwindCss"].map
                                     ((item) => (
-                                        <span key={item} className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                                        <span key={item} className="lg:py-4 lg:px-3 py-2 px-3 md:px-4 md:py-4 text-xs lg:text-base opacity-50 
                                         lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                             {item}
                                         </span>
                                     ))}
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]" />
+                                <span className="lg:py-4 lg:px-3 py-4 px-3 md:px-4 md:py-5  rounded-lg text-center bg-[#10132E]" />
                             </div>
-                            <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
-                                <span className="lg:py-4 lg:px-3 py-4 px-3  rounded-lg text-center bg-[#10132E]" />
+                            <div className="flex flex-col gap-3 md:gap-4 lg:gap-8">
+                                <span className="lg:py-4 lg:px-3 py-4 px-3 md:py-6  rounded-lg text-center bg-[#10132E]" />
                                 {["Node.js", "Git", "MySQL"].map
                                     ((item) => (
-                                        <span key={item} className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
+                                        <span key={item} className="lg:py-4 lg:px-3 py-2 px-3 md:px-4 md:py-4 text-xs lg:text-base opacity-50 
                                         lg:opacity-100 rounded-lg text-center bg-[#10132E]">
                                             {item}
                                         </span>
@@ -132,7 +132,7 @@ export const BentoGridItem = ({
                             </div>
                         </div>
                     )}
-                    {id === 6 && (
+                    {id === 5 && (
                         <div className="mt-5 relative">
                             <div className={`absolute -bottom-5 right-0`}>
                                 <Lottie
