@@ -1,6 +1,6 @@
 <div align="center">
   <br />
-      <img src="https://github.com/AnthonyChampion/animated_portfolio/public/backgroundreadme.png" alt="Project Banner">
+      <img src="https://github.com/AnthonyChampion/animated_portfolio/blob/dev/public/backgroundreadme.png" alt="Project Banner">
     </a>
   <br />
 
