@@ -62,10 +62,10 @@ export const projects = [
     {
         id: 1,
         title: "Cineside",
-        des: "Personal project on work: A React Native movie app with Expo and Tailwind",
-        img: "/cines.png",
-        iconLists: ["/re.svg", "/tail.svg", "/expo.svg", "/astudio.svg", "/git.svg", "/gitbash.svg", "/figma.svg"],
-        link: "",
+        des: "Personal project on work: A Full stack responsive & a version React Native movie app",
+        img: "/cinesidev2.png",
+        iconLists: ["/re.svg", "/tail.svg", "/node.svg", "/msql.svg", "/git.svg", "/gitbash.svg", "/figma.svg"],
+        link: "https://github.com/AnthonyChampion/CinesideV2",
     },
     {
         id: 2,
